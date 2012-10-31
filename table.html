@@ -1,0 +1,84 @@
+<html>
+	<head>
+
+   		<link rel="stylesheet" href="my_css.css" />
+   		<script src="jquery-1.7.2.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".master-content-drop").hide();
+				$(".button-drop").click(function(){
+					$(".master-content-drop").slideToggle();
+					$(".button-drop").text("drop");
+				});
+
+				$(".content-drop").click(function(){
+					var value = $(this).text();
+					$(".button-drop").text(value);
+				});
+			});
+		</script>
+		
+	</head>
+	
+	<body>
+		<div class="button-drop">drop</div>
+		<div class="master-content-drop">
+			<div class="content-drop">1</div>
+			<div class="content-drop">2</div>
+			<div class="content-drop">3</div>
+			<div class="content-drop">4</div>
+		</div>	
+
+
+		<div class="master">
+			<div class="header">
+				<div class="header-left">header1</div>
+				<div class="header-midle">header2</div>
+				<div class="header-right">header3</div>
+			</div>			
+			<div class="content">
+				<ul>
+					<li>bejo</li>
+					<li>andi</li>
+					<li>bejo</li>
+					<li>andi</li>
+					<li>bejo</li>
+					<li>andi</li>
+					<li>bejo</li>
+					<li>andi</li>
+					<li>bejo</li>
+					<li>andi</li>
+				</ul>
+
+				<ul>
+					<li>bejo</li>
+					<li>andi</li>
+					<li>bejo</li>
+					<li>andi</li>
+					<li>bejo</li>
+					<li>andi</li>
+					<li>bejo</li>
+					<li>andi</li>
+					<li>bejo</li>
+					<li>andi</li>
+				</ul>
+
+				<ul>
+					<li>bejo</li>
+					<li>andi</li>
+					<li>bejo</li>
+					<li>andi</li>
+					<li>bejo</li>
+					<li>andi</li>
+					<li>bejo</li>
+					<li>andi</li>
+					<li>bejo</li>
+					<li>andi</li>
+				</ul>
+			</div>
+		</div>
+	<iframe src="https://www.facebook.com/plugins/like.php?href=YOUR_URL"
+        scrolling="no" frameborder="0"
+        style="border:none; width:450px; height:80px"></iframe>
+	</body>
+</html>
